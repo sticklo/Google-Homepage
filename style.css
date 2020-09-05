@@ -1,11 +1,6 @@
 
-}
-
-body { 
-	min-width: 1366px;
+body {
 	height: auto;
-
-
 }
 
 .nav ul {
@@ -16,18 +11,17 @@ body {
 .nav ul li {
 	display: inline;
 	margin-right:20px;
-	width: 40%;
-	height: 60px;
 	border: hidden;
+}
 
+.nav ul li button {
+	border: none;
 }
 
 .nav ul {
 	float: right;
 }
  
- 
- }
 
 .center {
 	text-align: center;
@@ -62,6 +56,12 @@ body {
 .btn {
 	margin-top: 30px;
 
+}
+#mic {
+	height:20px;
+	position:relative;
+	top:5px;
+	left: -40px;
 }
 
 
@@ -100,16 +100,6 @@ body {
 }
 
 
-footer {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	height: 50px;
-}
-
-
-
-
 hr {
 	opacity: 0.2;
 }
@@ -122,10 +112,12 @@ hr {
 
 
 .searchbar{
-  height:45px;
-  border:solid;
+  border-radius: 50px;
+  height:40px;
   width:500px;
   font-size:16px;
+  outline: none;
+  border: 1px solid #dcdcdc;
   
   
 }
@@ -141,16 +133,25 @@ footer {
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     position: fixed;
-    bottom: 0;
+    bottom: 20px;
     width: 100%;
 }
+
+
+footer {
+	height: 50px;
+}
+
+
+
 
 footer p {
     background: rgb(248, 248, 248);
     color: rgb(131, 128, 128);
     border-top: 1px solid rgb(226, 226, 226);
     border-bottom: 1px solid rgb(226, 226, 226);
-    padding: 0.5rem 2rem;
+	padding: 0.5rem 2rem;
+	margin: 0;
     
 }
 
@@ -173,8 +174,4 @@ footer .nav-links a:hover {
 
 footer .nav-links .right {
     margin-left: auto;
-}
-
-footer .nav-links {
-	border: solid;
 }
